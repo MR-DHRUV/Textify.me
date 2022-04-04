@@ -1,0 +1,21 @@
+#nav-heading {
+  font-size: 1.5 rem;
+  padding-right: 3vw;
+  background-image: linear-gradient(
+    -225deg,
+    #5225f7 0%,
+    #09ff32 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+
+  /* background-size: auto auto; */
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+

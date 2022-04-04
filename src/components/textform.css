@@ -1,0 +1,36 @@
+h1{
+    text-transform: capitalize;
+    
+}
+
+#button_div{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media screen and (width<800px) {
+    #button_div{
+       flex-direction: column; 
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .my-btn{
+        margin-top: 2vh;
+        width: 60%;
+    }
+
+
+}
+
+
+
+.my-btn{
+    margin-right: 1vw;
+}
+
+button{
+    text-transform: capitalize;
+}
