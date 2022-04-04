@@ -1,15 +1,7 @@
 import { useState } from 'react';
-import './Appa.css';
-import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
 
 
 
@@ -29,10 +21,7 @@ function App() {
       document.body.style.color = "black"
       document.getElementById('text-area').style.backgroundColor = 'white';
       document.getElementById('text-area').style.color = 'black';
-      setbuttonMode('-')
-
-      showAlert('Light mode has been enabled');
-
+      setbuttonMode('-');
     }
 
     else {
@@ -42,55 +31,22 @@ function App() {
       document.getElementById('text-area').style.backgroundColor = 'rgba(36, 35, 35, 0.603)';
       document.getElementById('text-area').style.color = 'white';
       setbuttonMode('-outline-')
-
-
-      showAlert('Dark mode has been enabled');
     }
 
   }
-
-  const [alert, setAlert] = useState(null);
-
-  const showAlert = (message) => {
-    setAlert({
-      msg: message
-    }
-    )
-
-    setTimeout(() => {
-      setAlert(null);
-    }, 1000);
-  }
-
-
-
 
   return (
-    <>
-      <Router>
+    <>    
         <div id="main"  >
-          <Navbar title="Textify.me" mode={mode} toggleMode={toggleMode} />
-          {/* <Alert alert={alert} /> */}
-          <Switch>
 
-            <Route exact path="/">
-              <TextForm heading="Enter text you want to analyze" mode={mode} showAlert={showAlert} buttonMode={buttonMode} />
-            </Route>
-
-            <Route exact path="/About">
-              <About />
-            </Route>
-          </Switch>
-         
-          
+          <Navbar title="Textify.me" mode={mode} toggleMode={toggleMode} />          
+          <TextForm heading="Hey There!" mode={mode} buttonMode={buttonMode} />
 
         </div>
-      </Router>
     </>
   );
 }
 
 export default App;
 
-// to use js in html use {} to write your js
 

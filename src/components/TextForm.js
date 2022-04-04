@@ -63,7 +63,7 @@ export default function TextForm(props) {
         const textSelector = document.getElementById("text-area")
         textSelector.select();
         navigator.clipboard.writeText(textSelector.value);
-        props.showAlert("Copied To Clipboard");
+        // props.showAlert("Copied To Clipboard");
         setMyText("Copied!");
         setMyTextColor('success');
 
@@ -71,21 +71,13 @@ export default function TextForm(props) {
            setMyText("Copy Text");
            setMyTextColor('primary');
 
-          }, 1000);
+          }, 1500);
     }
 
     const extraSpaceRemover = () => {
         let newText = text.split(/[ ]+/); //Learn REGEX js //
         setText(newText.join(" "));
     }
-
-    // const typingSpeed = setInterval( () => {
-    //     let textSelector = document.getElementById("text-area");
-    //     // let speedis =(textSelector.value.split(" ").length)-1;
-    //     // let speedPrser = speedis.toString();
-    //     console.log(((textSelector.value.split(" ").length)-1));
-    //     return ((textSelector.value.split(" ").length)-1);       
-    // },60000)
 
     return (
         <>
