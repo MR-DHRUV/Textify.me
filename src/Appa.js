@@ -69,8 +69,8 @@ function App() {
     <>
       <Router>
         <div id="main"  >
-          <Alert alert={alert} />
           <Navbar title="Textify.me" mode={mode} toggleMode={toggleMode} />
+          {/* <Alert alert={alert} /> */}
           <Switch>
 
             <Route exact path="/">
@@ -81,6 +81,8 @@ function App() {
               <About />
             </Route>
           </Switch>
+         
+          
 
         </div>
       </Router>
