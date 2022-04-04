@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Textify.me/static/css/main.fc1c8831.css",
-    "main.js": "/Textify.me/static/js/main.76cd692c.js",
+    "main.js": "/Textify.me/static/js/main.e70bf0c1.js",
     "static/js/787.85a40384.chunk.js": "/Textify.me/static/js/787.85a40384.chunk.js",
     "index.html": "/Textify.me/index.html",
     "main.fc1c8831.css.map": "/Textify.me/static/css/main.fc1c8831.css.map",
-    "main.76cd692c.js.map": "/Textify.me/static/js/main.76cd692c.js.map",
+    "main.e70bf0c1.js.map": "/Textify.me/static/js/main.e70bf0c1.js.map",
     "787.85a40384.chunk.js.map": "/Textify.me/static/js/787.85a40384.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc1c8831.css",
-    "static/js/main.76cd692c.js"
+    "static/js/main.e70bf0c1.js"
   ]
 }
