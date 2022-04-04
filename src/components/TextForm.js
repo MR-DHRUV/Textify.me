@@ -109,7 +109,7 @@ export default function TextForm(props) {
 
                 <h2 className='my-3' >Text Summary</h2>
                 <p className='my-1'>You have entered {text.length} characters</p>
-                <p className='my-1'>You have entered {(text.split(" ").length) - 1} words</p>
+                <p className='my-1'>You have entered {(text.split(/\s+/).length)-1} words</p>
                 <p className='my-1'>You will take {((text.split(" ").length) - 1) * 0.008} minutes to read it</p>
                 {/* <p className='my-1'>{typingSpeed} WPM</p> */}
 

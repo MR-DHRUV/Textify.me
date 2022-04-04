@@ -8,7 +8,7 @@ export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
-                <a className="navbar-brand" id='nav-heading' href="/">{props.title}</a>
+                <a className="navbar-brand" id='nav-heading' href="https://mr-dhruv.github.io/Textify.me/">{props.title}</a>
 
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
